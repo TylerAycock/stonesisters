@@ -1,0 +1,124 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+          }
+        },
+        "vendor": {
+          "type": "text",
+          "settings": {
+            "text": "<em>{{ product.vendor }}<\/em>",
+            "text_style": "uppercase"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "picker_type": "button"
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "settings": {
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+          }
+        },
+        "share": {
+          "type": "share",
+          "disabled": true,
+          "settings": {
+            "share_label": "Share"
+          }
+        },
+        "bb4f0aff-4874-4667-a111-f3f33b6f1d21": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Care Guide",
+            "icon": "heart",
+            "content": "<p>{{ product.metafields.descriptors.care_guide | metafield_tag }}<\/p>",
+            "page": ""
+          }
+        },
+        "5f86b228-8e23-4989-9a78-ab902e72ba9b": {
+          "type": "custom_liquid",
+          "settings": {
+            "custom_liquid": "<p class=\"custom-link\"> <a target=\"_blank\" href=\"{{product.metafields.custom.sustainabilitypdf | file_url}}\" >Sustainability PDF<\/a>\n <\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "vendor",
+        "variant_picker",
+        "quantity_selector",
+        "price",
+        "buy_buttons",
+        "description",
+        "share",
+        "bb4f0aff-4874-4667-a111-f3f33b6f1d21",
+        "5f86b228-8e23-4989-9a78-ab902e72ba9b"
+      ],
+      "custom_css": [
+        ".button--secondary {color: green;}"
+      ],
+      "settings": {
+        "enable_sticky_info": false,
+        "media_size": "large",
+        "constrain_to_viewport": true,
+        "media_fit": "contain",
+        "gallery_layout": "stacked",
+        "media_position": "left",
+        "image_zoom": "hover",
+        "mobile_thumbnails": "hide",
+        "hide_variants": false,
+        "enable_video_looping": true,
+        "padding_top": 52,
+        "padding_bottom": 52
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "custom_css": [
+
+      ],
+      "settings": {
+        "heading": "Related products",
+        "heading_size": "h2",
+        "products_to_show": 2,
+        "columns_desktop": 2,
+        "color_scheme": "accent-2",
+        "image_ratio": "square",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "columns_mobile": "2",
+        "padding_top": 28,
+        "padding_bottom": 32
+      }
+    }
+  },
+  "order": [
+    "main",
+    "related-products"
+  ]
+}

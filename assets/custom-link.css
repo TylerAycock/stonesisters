@@ -1,0 +1,10 @@
+.custom-link a{
+  color: var(--color-base-text);
+  text-decoration: none;
+}
+
+.custom-link a:hover{
+  border-bottom: 1px solid black;
+  padding-bottom: 3;
+}
+

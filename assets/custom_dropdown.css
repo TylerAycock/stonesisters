@@ -1,0 +1,23 @@
+.custom_dropdown{
+  margin-top: 10px;
+}
+
+.custom_dropdown label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold; /* Adjust font weight as needed */
+  color: #333; /* Adjust text color as needed */
+}
+
+.custom_dropdown input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd; /* Adjust border color as needed */
+  border-radius: 4px; /* Adjust border-radius as needed */
+  box-sizing: border-box;
+}
+
+.custom_dropdown input::placeholder {
+  color: #999; /* Adjust placeholder text color as needed */
+}
