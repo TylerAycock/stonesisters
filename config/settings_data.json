@@ -150,8 +150,8 @@
               "announcement-bar-text": "Test 1",
               "font-size": 14,
               "height__padding": 14,
-              "background-color": "#fff",
-              "font-color": "#eee",
+              "background-color": "#ffffff",
+              "font-color": "#121212",
               "link": "",
               "text_alignment": "center",
               "text_transform": "none"
@@ -164,8 +164,8 @@
               "announcement-bar-text": "Test 2",
               "font-size": 14,
               "height__padding": 14,
-              "background-color": "#fff",
-              "font-color": "#eee",
+              "background-color": "#dd1d1d",
+              "font-color": "#eeeeee",
               "link": "",
               "text_alignment": "start",
               "text_transform": "none"
