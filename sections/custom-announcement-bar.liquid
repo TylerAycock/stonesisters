@@ -8,7 +8,8 @@
   .custom__bar{
     text-align: center;
     padding: {{section.settings.height__padding}}px 0;
-    background-color: {{section.settings.background-color}}
+    background-color: {{section.settings.background-color}};
+    color: {{section.settings.font-color}}
   }
   .custom__bar a p{
     text-decoraction: none;
@@ -56,6 +57,12 @@
       "id": "background-color",
       "label": "Background Color",
       "default": "#fff"
+    },
+       {
+      "type": "color",
+      "id": "font-color",
+      "label": "Font Color",
+      "default": "#eee"
     }
   ]
 }
