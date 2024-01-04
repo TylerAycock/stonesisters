@@ -28,6 +28,7 @@
           text-transform: {{block.settings.text_transform}}
         }
       {% endstyle %}
+      {% assign count = count | plus: 1 %}
   {% endcase %}
 {% endfor %}
 
