@@ -26,8 +26,15 @@
 {% schema %}
 {
   "name": "Custom Announcement Bar",
-  "settings": [
-    {
+  "settings":
+  [
+  {
+    "type": "checkbox",
+    "id": "show-on-homepage",
+    "label": "Only Show on HomePage",
+    "default": false
+  },
+  {
       "type": "text",
       "id": "announcement-bar-text",
       "default": "This is a default announcement",
