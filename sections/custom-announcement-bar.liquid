@@ -1,6 +1,6 @@
 {% for block in section.blocks %}
   {% case block.type %}
-    {% when 'slide' %}
+    {% when 'announcement' %}
       {% if template.name == 'index' or section.settings['show-on-homepage'] == false %}
         <div class="custom__bar">
           <a href="{{ section.settings.link }}">
@@ -36,7 +36,7 @@
   "max_blocks": 4,
   "blocks": [
     {
-  "type": "Announcement",
+  "type": "announcement",
   "name": "Announcement",
   "settings":
   [
