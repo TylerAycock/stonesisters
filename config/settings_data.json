@@ -143,6 +143,7 @@
       "custom-announcement-bar": {
         "type": "custom-announcement-bar",
         "settings": {
+          "show-on-homepage": true,
           "announcement-bar-text": "Hello World!",
           "font-size": 14,
           "height__padding": 14,
