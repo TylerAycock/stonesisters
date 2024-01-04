@@ -7,7 +7,7 @@
 {% style %}
   .custom__bar a p{
     text-align: center;
-    padding: {{section.settings.height}}px 0;
+    padding: {{section.settings.height__padding}}px 0;
   }
   .custom__bar a p{
     text-decoraction: none;
@@ -42,9 +42,9 @@
     },
     {
       "type": "range",
-      "id": "height",
+      "id": "height__padding",
       "default": 14,
-      "label": "Height",
+      "label": "Top and Bottom Padding",
       "min": 0,
       "max": 20,
       "step": 1,
