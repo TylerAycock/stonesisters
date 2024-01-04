@@ -148,7 +148,9 @@
           "height__padding": 14,
           "background-color": "#c0b945",
           "font-color": "#121212",
-          "link": "shopify:\/\/collections\/all"
+          "link": "shopify:\/\/collections\/all",
+          "text_alignment": "center",
+          "text_transform": "uppercase"
         }
       }
     },
