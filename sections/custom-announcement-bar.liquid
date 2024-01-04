@@ -1,15 +1,15 @@
-<div class="custom-announcement-bar">
-  <a href="https://google.com" class="custom-announcement-bar-link">
-    <p class="custom-annoucenement-bar-message">{{ section.settings['announcement-bar-text'] }}</p>
+<div class="custom__bar">
+  <a href="https://google.com">
+    <p>{{ section.settings['announcement-bar-text'] }}</p>
   </a>
 </div>
 
 {% style %}
-  .custom-announcement-bar .custom-announcement-bar-message{
+  .custom__bar a p{
     text-align: center;
     font-size: {{section.settings.font-size}};
   }
-  .custom-annoucement-bar a {
+  .custom__bar a p{
     text-decoraction: none;
     color: red;
   }
