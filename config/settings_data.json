@@ -143,38 +143,23 @@
       "custom-announcement-bar": {
         "type": "custom-announcement-bar",
         "blocks": {
-          "a6f035d5-be7f-4fec-a996-8319cf7c2f27": {
+          "e9907dd4-441a-4968-842b-b426ec6483f2": {
             "type": "announcement",
             "settings": {
-              "show-on-homepage": false,
-              "announcement-bar-text": "Test 1",
+              "show-on-homepage": true,
+              "announcement-bar-text": "view our fascinating wares",
               "font-size": 14,
-              "height__padding": 5,
-              "background-color": "#121212",
+              "height__padding": 1,
+              "background-color": "#c0b945",
               "font-color": "#dd1d1d",
-              "link": "",
+              "link": "shopify:\/\/collections\/all",
               "text_alignment": "center",
-              "text_transform": "none"
-            }
-          },
-          "73acb22d-0260-4f3b-9113-d95dc061dc92": {
-            "type": "announcement",
-            "settings": {
-              "show-on-homepage": false,
-              "announcement-bar-text": "Test 2",
-              "font-size": 14,
-              "height__padding": 14,
-              "background-color": "#dd1d1d",
-              "font-color": "#121212",
-              "link": "",
-              "text_alignment": "center",
-              "text_transform": "none"
+              "text_transform": "uppercase"
             }
           }
         },
         "block_order": [
-          "a6f035d5-be7f-4fec-a996-8319cf7c2f27",
-          "73acb22d-0260-4f3b-9113-d95dc061dc92"
+          "e9907dd4-441a-4968-842b-b426ec6483f2"
         ],
         "settings": {
         }
