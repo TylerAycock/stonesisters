@@ -149,9 +149,9 @@
               "show-on-homepage": false,
               "announcement-bar-text": "Test 1",
               "font-size": 14,
-              "height__padding": 14,
-              "background-color": "#ffffff",
-              "font-color": "#121212",
+              "height__padding": 5,
+              "background-color": "#121212",
+              "font-color": "#dd1d1d",
               "link": "",
               "text_alignment": "center",
               "text_transform": "none"
@@ -165,9 +165,9 @@
               "font-size": 14,
               "height__padding": 14,
               "background-color": "#dd1d1d",
-              "font-color": "#eeeeee",
+              "font-color": "#121212",
               "link": "",
-              "text_alignment": "start",
+              "text_alignment": "center",
               "text_transform": "none"
             }
           }
