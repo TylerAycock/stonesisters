@@ -143,7 +143,11 @@
       "custom-announcement-bar": {
         "type": "custom-announcement-bar",
         "settings": {
-          "announcement-bar-text": "Hello World!"
+          "announcement-bar-text": "Hello World!",
+          "font-size": 14,
+          "height__padding": 14,
+          "background-color": "#c0b945",
+          "font-color": "#dd1d1d"
         }
       }
     },
