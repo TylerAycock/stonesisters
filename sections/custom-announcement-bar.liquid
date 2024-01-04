@@ -6,7 +6,7 @@
 
 {% style %}
   .custom__bar{
-    text-align: {{section.settings.vertical_alignment}};
+    text-align: {{section.settings.text_alignment}};
     padding: {{section.settings.height__padding}}px 0;
     background-color: {{section.settings.background-color}};
 
@@ -72,23 +72,23 @@
     },
     {
   "type": "select",
-  "id": "vertical_alignment",
-  "label": "Vertical alignment",
+  "id": "text_alignment",
+  "label": "Text Alignment",
   "options": [
     {
-      "value": "top",
-      "label": "Top"
+      "value": "start",
+      "label": "Start"
     },
     {
-      "value": "middle",
-      "label": "Middle"
+      "value": "center",
+      "label": "Center"
     },
     {
-      "value": "bottom",
-      "label": "Bottom"
+      "value": "end",
+      "label": "End"
     }
   ],
-  "default": "middle"
+  "default": "start"
 }
   ]
 }
