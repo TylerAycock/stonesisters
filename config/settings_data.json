@@ -142,16 +142,41 @@
       },
       "custom-announcement-bar": {
         "type": "custom-announcement-bar",
+        "blocks": {
+          "a6f035d5-be7f-4fec-a996-8319cf7c2f27": {
+            "type": "announcement",
+            "settings": {
+              "show-on-homepage": false,
+              "announcement-bar-text": "Test 1",
+              "font-size": 14,
+              "height__padding": 14,
+              "background-color": "#fff",
+              "font-color": "#eee",
+              "link": "",
+              "text_alignment": "center",
+              "text_transform": "none"
+            }
+          },
+          "73acb22d-0260-4f3b-9113-d95dc061dc92": {
+            "type": "announcement",
+            "settings": {
+              "show-on-homepage": false,
+              "announcement-bar-text": "Test 2",
+              "font-size": 14,
+              "height__padding": 14,
+              "background-color": "#fff",
+              "font-color": "#eee",
+              "link": "",
+              "text_alignment": "start",
+              "text_transform": "none"
+            }
+          }
+        },
+        "block_order": [
+          "a6f035d5-be7f-4fec-a996-8319cf7c2f27",
+          "73acb22d-0260-4f3b-9113-d95dc061dc92"
+        ],
         "settings": {
-          "show-on-homepage": true,
-          "announcement-bar-text": "Hello World!",
-          "font-size": 14,
-          "height__padding": 14,
-          "background-color": "#c0b945",
-          "font-color": "#121212",
-          "link": "shopify:\/\/collections\/all",
-          "text_alignment": "center",
-          "text_transform": "uppercase"
         }
       }
     },
