@@ -1,8 +1,9 @@
+{% assign count = 0 %}
 {% for block in section.blocks %}
   {% case block.type %}
     {% when 'announcement' %}
       {% if template.name == 'index' or block.settings['show-on-homepage'] == false %}
-        <div class="custom__bar">
+        <div class="custom__bar__{{ count }}">
           <a href="{{ block.settings.link }}">
             <p class="custom__bar__msg">{{ block.settings['announcement-bar-text'] }}</p>
           </a>
@@ -10,14 +11,14 @@
       {% endif %}
 
       {% style %}
-        .custom__bar{
+        .custom__bar__{{ count }}{
           text-align: {{block.settings.text_alignment}};
           padding: {{block.settings.height__padding}}px 0;
           background-color: {{block.settings.background-color}};
 
         }
 
-        .custom__bar a{
+        .custom__bar__{{count}} a{
             text-decoraction: none;
         }
 
