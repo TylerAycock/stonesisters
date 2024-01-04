@@ -1,8 +1,10 @@
-<div class="custom__bar">
-  <a href="{{ section.settings.link }}">
-    <p class="custom__bar__msg">{{ section.settings['announcement-bar-text'] }}</p>
-  </a>
-</div>
+{% if template.name == 'index' or section.settings['show-on-homepage'] == false %}
+  <div class="custom__bar">
+    <a href="{{ section.settings.link }}">
+      <p class="custom__bar__msg">{{ section.settings['announcement-bar-text'] }}</p>
+    </a>
+  </div>
+{% endif %}
 
 {% style %}
   .custom__bar{
