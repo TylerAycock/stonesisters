@@ -139,6 +139,12 @@
         "settings": {
           "color_scheme": "background-1"
         }
+      },
+      "custom-announcement-bar": {
+        "type": "custom-announcement-bar",
+        "settings": {
+          "announcement-bar-text": "Hello World!"
+        }
       }
     },
     "content_for_index": [
