@@ -1,29 +1,34 @@
-{% if template.name == 'index' or section.settings['show-on-homepage'] == false %}
-  <div class="custom__bar">
-    <a href="{{ section.settings.link }}">
-      <p class="custom__bar__msg">{{ section.settings['announcement-bar-text'] }}</p>
-    </a>
-  </div>
-{% endif %}
+{% for block in section.blocks %}
+  {% case block.type %}
+    {% when 'slide' %}
+      {% if template.name == 'index' or section.settings['show-on-homepage'] == false %}
+        <div class="custom__bar">
+          <a href="{{ section.settings.link }}">
+            <p class="custom__bar__msg">{{ section.settings['announcement-bar-text'] }}</p>
+          </a>
+        </div>
+      {% endif %}
 
-{% style %}
-  .custom__bar{
-    text-align: {{section.settings.text_alignment}};
-    padding: {{section.settings.height__padding}}px 0;
-    background-color: {{section.settings.background-color}};
+      {% style %}
+        .custom__bar{
+          text-align: {{section.settings.text_alignment}};
+          padding: {{section.settings.height__padding}}px 0;
+          background-color: {{section.settings.background-color}};
 
-  }
+        }
 
-  .custom__bar a{
-      text-decoraction: none;
-  }
+        .custom__bar a{
+            text-decoraction: none;
+        }
 
-  .custom__bar__msg{
-    font-size: {{section.settings.font-size}}px;
-    color: {{section.settings.font-color}};
-    text-transform: {{section.settings.text_transform}}
-  }
-{% endstyle %}
+        .custom__bar__msg{
+          font-size: {{section.settings.font-size}}px;
+          color: {{section.settings.font-color}};
+          text-transform: {{section.settings.text_transform}}
+        }
+      {% endstyle %}
+  {% endcase %}
+{% endfor %}
 
 {% schema %}
 {
