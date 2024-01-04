@@ -5,7 +5,7 @@
       {% if template.name == 'index' or block.settings['show-on-homepage'] == false %}
         <div class="custom__bar__{{ count }}">
           <a href="{{ block.settings.link }}">
-            <p class="custom__bar__msg">{{ block.settings['announcement-bar-text'] }}</p>
+            <p class="custom__bar__msg__{{ count }}">{{ block.settings['announcement-bar-text'] }}</p>
           </a>
         </div>
       {% endif %}
