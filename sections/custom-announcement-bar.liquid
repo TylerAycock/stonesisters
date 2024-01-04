@@ -1,19 +1,19 @@
 {% for block in section.blocks %}
   {% case block.type %}
     {% when 'announcement' %}
-      {% if template.name == 'index' or section.settings['show-on-homepage'] == false %}
+      {% if template.name == 'index' or block.settings['show-on-homepage'] == false %}
         <div class="custom__bar">
-          <a href="{{ section.settings.link }}">
-            <p class="custom__bar__msg">{{ section.settings['announcement-bar-text'] }}</p>
+          <a href="{{ block.settings.link }}">
+            <p class="custom__bar__msg">{{ block.settings['announcement-bar-text'] }}</p>
           </a>
         </div>
       {% endif %}
 
       {% style %}
         .custom__bar{
-          text-align: {{section.settings.text_alignment}};
-          padding: {{section.settings.height__padding}}px 0;
-          background-color: {{section.settings.background-color}};
+          text-align: {{block.settings.text_alignment}};
+          padding: {{block.settings.height__padding}}px 0;
+          background-color: {{block.settings.background-color}};
 
         }
 
@@ -22,9 +22,9 @@
         }
 
         .custom__bar__msg{
-          font-size: {{section.settings.font-size}}px;
-          color: {{section.settings.font-color}};
-          text-transform: {{section.settings.text_transform}}
+          font-size: {{block.settings.font-size}}px;
+          color: {{block.settings.font-color}};
+          text-transform: {{block.settings.text_transform}}
         }
       {% endstyle %}
   {% endcase %}
